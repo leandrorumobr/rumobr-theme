@@ -5,7 +5,19 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
-## [1.0.0] - 2024-02-19
+## [1.1.0] - 2026-02-20
+
+### Added
+- Suporte para Laravel 12.0
+
+### Changed
+- Atualizado constraint do Laravel Framework para incluir ^12.0 no composer.json
+- Comando `rumobr-theme:publish --force` agora funciona corretamente para sobrescrever arquivos existentes (incluindo app.css)
+
+### Fixed
+- Corrigido comportamento da flag `--force` no comando de publicação para passar corretamente a opção aos comandos `vendor:publish`
+
+## [1.0.0] - 2026-02-19
 
 ### Added
 - Lançamento inicial do pacote `nunes/rumobr-theme`
