@@ -11,21 +11,24 @@ class PublishRumobrThemeCommand extends Command
 
     public function handle()
     {
-        $force = $this->option('force') ? '--force' : '';
+        $force = $this->option('force');
 
         $this->call('vendor:publish', [
             '--provider' => 'Nunes\\RumobrTheme\\RumobrThemeServiceProvider',
             '--tag' => 'rumobr-theme-components',
+            '--force' => $force,
         ]);
 
         $this->call('vendor:publish', [
             '--provider' => 'Nunes\\RumobrTheme\\RumobrThemeServiceProvider',
             '--tag' => 'rumobr-theme-pages',
+            '--force' => $force,
         ]);
 
         $this->call('vendor:publish', [
             '--provider' => 'Nunes\\RumobrTheme\\RumobrThemeServiceProvider',
             '--tag' => 'rumobr-theme-css',
+            '--force' => $force,
         ]);
 
         $this->info('✓ Componentes Vue e CSS publicados com sucesso!');
