@@ -7,7 +7,7 @@ Componentes Vue 3 e CSS para projetos Laravel - Tema Rumo BR. Uma biblioteca com
 ## 📋 Requisitos
 
 - PHP 8.1 ou superior
-- Laravel 10.0 ou superior (suporta Laravel 11)
+- Laravel 10.0 ou superior (suporta Laravel 11 e 12)
 - Vue 3.3 ou superior
 - Node.js e NPM (para build dos assets)
 
@@ -16,13 +16,13 @@ Componentes Vue 3 e CSS para projetos Laravel - Tema Rumo BR. Uma biblioteca com
 ### 1. Instalar via Composer
 
 ```bash
-composer require nunes/rumobr-tema
+composer require nunes/rumobr-theme
 ```
 
 ### 2. Publicar Componentes e Assets
 
 ```bash
-php artisan rumobr-tema:publish
+php artisan rumobr-theme:publish
 ```
 
 Este comando publica:
@@ -33,7 +33,7 @@ Este comando publica:
 Para sobrescrever arquivos existentes, use a flag `--force`:
 
 ```bash
-php artisan rumobr-tema:publish --force
+php artisan rumobr-theme:publish --force
 ```
 
 ### 3. Compilar Assets
@@ -236,7 +236,7 @@ const breadcrumbs = [
 
 ## 📁 Estrutura de Arquivos Publicados
 
-Após executar `php artisan rumobr-tema:publish`, os seguintes arquivos serão criados:
+Após executar `php artisan rumobr-theme:publish`, os seguintes arquivos serão criados:
 
 ```
 resources/
@@ -277,7 +277,7 @@ O Service Provider é registrado automaticamente pelo Laravel. Não é necessár
 ### Publicar Assets
 
 ```bash
-php artisan rumobr-tema:publish
+php artisan rumobr-theme:publish
 ```
 
 Publica todos os componentes, páginas e CSS.
@@ -285,7 +285,7 @@ Publica todos os componentes, páginas e CSS.
 ### Publicar com Força
 
 ```bash
-php artisan rumobr-tema:publish --force
+php artisan rumobr-theme:publish --force
 ```
 
 Sobrescreve arquivos existentes.
@@ -304,8 +304,8 @@ phpunit
 
 ## 🎯 Suporte
 
-- **Issues**: [GitHub Issues](https://github.com/leandrorumobr/rumobr-tema/issues)
-- **Source**: [GitHub Repository](https://github.com/leandrorumobr/rumobr-tema)
+- **Issues**: [GitHub Issues](https://github.com/leandrorumobr/rumobr-theme/issues)
+- **Source**: [GitHub Repository](https://github.com/leandrorumobr/rumobr-theme)
 - **Email**: leandro.nunes@rumobr.com
 
 ## 👤 Autor
