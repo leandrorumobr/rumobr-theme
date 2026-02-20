@@ -10,6 +10,12 @@
         "theme",
         "ui"
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/leandrorumobr/rumobr-theme"
+        }
+    ],
     "authors": [
         {
             "name": "Leandro Nunes",
